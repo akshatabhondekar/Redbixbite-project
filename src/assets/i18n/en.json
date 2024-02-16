@@ -1,0 +1,26 @@
+{
+    "LABELS":{
+        "CreationDate": "Creation Date",
+        "CreationDateTO":   "Creation Date TO",
+        "ClearingAgencyType": "Clearing Agency Type",
+        "SelectOne": "Select One" ,
+        "All": "All",
+        "CrNumber": "CR Number",
+        "EstablishmentID": "Establishment ID",
+        "CustomCode": "Custom Code",
+        "Status": "Status",
+        "AgencyName": "AgencyName",
+        "search": "Search",
+        "Reset":"Reset",
+        "SrNo":"Sr/No"
+      },
+      "HEADER": {
+        "NAVBAR-BRAND": "Redbixbite Solution",
+         "SERVICE":"Service",
+         "HOME":"Home",
+         "ABOUT":"About",
+         "BLOG":"Blog",
+         "CAREERS":"Careers"
+      }
+  
+  }

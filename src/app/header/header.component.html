@@ -1,0 +1,48 @@
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " style="background-color: #004C99; font-family: sans-serif !important;">
+    <div class="container">
+      <a class="navbar-brand" href="#">{{'HEADER.NAVBAR-BRAND' | translate}}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-start" id="navbarToggler">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <div class="nav-link smooth-scroll">
+              {{ 'HEADER.HOME' | translate }}
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link smooth-scroll">
+              {{ 'HEADER.BLOG' | translate }}
+            </div>
+          </li>
+          <li class="nav-item ">
+            <div class="nav-link smooth-scroll">
+              {{ 'HEADER.SERVICE' | translate }}
+            </div>
+          </li>
+          <li class="nav-item ">
+            <div class="nav-link smooth-scroll">
+              {{ 'HEADER.CAREERS' | translate }}
+            </div>
+          </li>
+          <li class="nav-item ">
+            <div class="nav-link smooth-scroll">
+              {{ 'HEADER.ABOUT' | translate }}
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link smooth-scroll">
+              <button class="btn btn-info btn-sm" style="padding: 1px; margin-left: 100px;" (click)="changeLangage(lang)">
+                {{ lang === 'en' ? 'عربي' : 'English' }}
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

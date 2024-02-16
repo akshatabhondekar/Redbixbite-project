@@ -1,0 +1,14 @@
+
+  .navbar-brand{
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-bottom: 5px;
+    left: 0px;
+    font-family:'Times New Roman', Times, serif;
+  }
+  .nav-link{
+    cursor: pointer;
+    color: azure;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  

@@ -1,0 +1,87 @@
+<div class="container">
+  <h4 class="text-white " style="background-color: rgb(45, 70, 102);padding: 10px; font-size: 16px !important;">Approve Clearing Agency</h4>
+
+  <form [formGroup]="form" class="row">
+   
+      <h4 class="text-danger" style="padding: 5px; font-size: 13px !important;">Search Criteria</h4>
+
+    <div class="col-md-6">
+      <label for="inputCr" class="form-label">{{'LABELS.CrNumber' | translate}}</label>
+      <input type="email" class="form-control" id="inputCr" formControlName="crNumber" placeholder="Enter Cr Number">
+    </div>
+    <div class="col-md-4">
+      <label for="inputStatus" class="form-label">{{'LABELS.Status' | translate}}</label>
+      <select id="inputStatus" class="form-select" formControlName="status">
+        <option selected>--{{'LABELS.SelectOne' | translate}}--</option>
+        <option>1</option>
+        <option>2</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label for="AgencyName" class="form-label">{{'LABELS.AgencyName' | translate}}</label>
+      <input type="text" class="form-control" id="AgencyName" formControlName="agencyName" placeholder="Enter Agency Name">
+    </div>
+    <div class="col-md-4">
+      <label for="EstablishmentID" class="form-label">{{'LABELS.EstablishmentID' | translate}}</label>
+      <input type="text" class="form-control" id="EstablishmentID" formControlName="establishmentID" placeholder="Establishment ID">
+    </div>
+    <div class="col-6">
+      <label for="CustomCode" class="form-label">{{'LABELS.CustomCode' | translate}}</label>
+      <input type="text" class="form-control" id="CustomCode" formControlName="customCode" placeholder="Custom Code">
+    </div>
+    <div class="col-md-4">
+      <label for="ClearingAgencyType" class="form-label">{{'LABELS.ClearingAgencyType' | translate}}</label>
+      <select id="ClearingAgencyType" class="form-select" formControlName="clearingAgencyType">
+        <option selected>--{{'LABELS.All' | translate}}--</option>
+        <option>1</option>
+        <option>2</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label for="CreationDate" class="form-label">{{'LABELS.CreationDate' | translate}}</label>
+      <input type="date" class="form-control" id="CreationDate" formControlName="creationDate">
+    </div>
+    <div class="col-md-4">
+      <label for="CreationDateTO" class="form-label">{{'LABELS.CreationDateTO' | translate}}</label>
+      <input type="date" class="form-control" id="CreationDateTO" formControlName="creationDateTO">
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+      <button class="btn btn-success" (click)="search()"> Search</button>
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-danger" (click)="reset()"> Reset</button>
+        
+      </div>
+    </div>
+   
+  </form>
+  <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="table table-striped m-2 aquamarine-background">
+    <thead>
+      <tr style="background-color: rgb(54, 84, 132);">
+        <th>{{'LABELS.SrNo'| translate}}</th>
+        <th>{{ 'LABELS.EstablishmentID' | translate }}</th>
+        <th>{{ 'LABELS.CrNumber' | translate }}</th>
+        <th>{{ 'LABELS.AgencyName' | translate }}</th>
+        <th>{{ 'LABELS.CustomCode' | translate }}</th>
+        <th>{{ 'LABELS.ClearingAgencyType' | translate }}</th>
+        <th>{{ 'LABELS.Status' | translate }}</th>
+        <th>{{ 'LABELS.CreationDate' | translate }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data ; let i = index" >
+        <td>{{SrNo + i}}</td>
+        <td>{{ item.EstablishmentID }}</td>
+        <td>{{ item.CrNumber }}</td>
+        <td>{{ item.AgencyName }}</td>
+        <td>{{ item.CustomCode }}</td>
+        <td>{{ item.ClearingAgencyType }}</td>
+        <td>{{ item.Status }}</td>
+        <td>{{ item.CreationDate }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div>
+</div>

@@ -1,0 +1,27 @@
+{
+    "HEADER": {
+      "NAVBAR-BRAND": "علامة التجارية ريدبكسبيت",
+      "ABOUT": "اتصل بنا",
+      "HOME": "الصفحة الرئيسية",
+      "SERVICE": "تسجيل الخروج",
+      "BLOG": "الحالة",
+      "CAREERS":"رقم المؤسسة"
+    },
+    "LABELS": {
+        "CrNumber": "رقم السجل التجاري",
+        "Status": "الحالة",
+        "AgencyName": "اسم الوكالة",
+        "EstablishmentID": "رقم المؤسسة",
+        "CustomCode": "الرمز المخصص",
+        "CreationDate": "تاريخ الإنشاء",
+        "CreationDateTO": "تاريخ الإنشاء حتى",
+        "ClearingAgencyType": "نوع الوكالة التصفية",
+        "Search": "بحث",
+        "SelectOne":"اختر واحد", 
+        "All":"الكل",
+        "Reset": "إعادة تعيين",
+        "SrNo": "١"
+    }
+  
+  }
+  

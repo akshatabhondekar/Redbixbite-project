@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import 'datatables.net-bs4/css/dataTables.bootstrap4.css';
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(33, 33, 100);
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
